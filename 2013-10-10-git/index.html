@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Title of presentation -->
+		<title>Git &amp; GitHub - Einführung</title>
+		<!-- Short description of presentation -->
+		<meta name="description" content="Git &amp; GitHub - Einführung">
+		<!-- Author of presentation -->
+		<meta name="author" content="Dominik Schilling, Christoph Jerolimov">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="./css/reveal.min.css">
+		<link rel="stylesheet" href="./css/theme/medieninformatik.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="./lib/css/solarized_light.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="./css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="./lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<style>
+			.pink {
+				color: #dd1166;
+			}
+			.inverted-pink {
+				color: #ffffff;
+				background-color: #dd1166;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Web-basierte Anwendungen 1</h1>
+					<h2>Git &amp; GitHub - Einführung</h2>
+
+					<p>10. Oktober 2013</p>
+
+					<p>
+						Studiengang Medieninformatik an der Fachhochschule Köln<br/>
+						Campus Gummersbach
+					</p>
+
+					<p style="margin-top: 100px">
+						Dominik Schilling<br/>
+						Christoph Jerolimov
+					</p>
+				</section>
+
+				<section>
+					<h1>
+						Aufbau der Lerneinheit
+						<strong>Git</strong> &amp;
+						<strong>GitHub</strong>
+					</h1>
+					<ul>
+						<li>kurze Theorie</li>
+						<li>kurze Demo</li>
+						<li>Zeit zum ausprobieren</li>
+					</ul>
+
+					<h1 style="margin-top: 1.0em; margin-bottom: 0.5em;">Ziele</h1>
+					<ul>
+						<li>Grundprinzipen</li>
+						<li>Verständnis der wichtigsten Begriffe</li>
+						<li>Erstellen eines ersten Branches</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>
+						<strong>1</strong>
+						Was ist <strong>Git</strong>?
+						Und warum nutzen wir es?
+					</h1>
+					<ul>
+						<li class="fragment">Ein modernes Versionskontrollsystem, entwickelt von Linus Torvalds</li>
+						<li class="fragment">Erstmal „nur“ ein Kommandozeilentool</li>
+						<li class="fragment pink">Dezentrale „Repositories“</li>
+						<li class="fragment">
+							<p style="font-size: 1em;">Vorteile von Git:</p>
+							<ul class="fragment">
+								<li>Optimiert auf gemeinsames, verteiltes arbeiten</li>
+								<li>Besonders gute Toolunterstützung / <a href="http://www.git-scm.com/downloads/guis">3rd-Party-Apps</a></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>
+						<strong>2</strong>
+						Was ist <strong>GitHub</strong>?
+						Und warum nutzen wir es?
+					</h1>
+					<ul>
+						<li class="fragment">
+							Eine zentrale Infrastruktur für Git (eine „Autorität“)<br/>
+							<p class="pink">▸ „ein zentrales Repository“</p>
+						</li>
+						<li class="fragment">
+							Von der OpenSource-Community und Arbeitgebern akzeptiert<br/>
+							<p class="pink">▸ „Social Development“</p>
+						</li>
+						<li class="fragment">
+							<p style="font-size: 1em;">GitHub bietet zudem optional:</p>
+							<ul>
+								<li>Webinterface für alle wichtigen Funktionen</li>
+								<li>Task-Verwaltung „Issues“</li>
+								<li>Ein Wiki pro Projekt</li>
+								<li>Eine Webseite pro Projekt</li>
+								<li>Hosting...</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<h1><strong>3</strong> Grundbegriffe</h1>
+
+					<h3>Was ist ein Repository?</h3>
+					<ul style="width: 100%;">
+						<li class="fragment"><span class="pink" style="display: inline-block; width: 25%;">init</span> &rarr; Lokales Repository anlegen</li>
+						<li class="fragment"><span class="pink" style="display: inline-block; width: 25%;">clone</span> &rarr; Entferntes Repository kopieren</li>
+					</ul>
+				</section>
+				<section data-transition="none">
+					<h1><strong>3</strong> Grundbegriffe</h1>
+
+					<h3>Was ist ein Repository?</h3>
+					<h3>Was ist ein Commit?</h3>
+
+					<ul style="width: 100%;">
+						<li class="fragment"><span class="pink" style="display: inline-block; width: 25%;">status <span style="color: white;"> oder „changes“</span></span> &rarr; Änderungen anzeigen</li>
+						<li class="fragment"><span class="pink" style="display: inline-block; width: 25%;">commit</span> &rarr; Änderungen versionieren</li>
+					</ul>
+				</section>
+				<section data-transition="none">
+					<h1><strong>3</strong> Grundbegriffe</h1>
+
+					<h3>Was ist ein Repository?</h3>
+					<h3>Was ist ein Commit?</h3>
+					<h3>Wie werden Daten synchonisiert?</h3>
+
+					<ul style="width: 100%;">
+						<li class="fragment"><span class="pink" style="display: inline-block; width: 25%;">pull</span> &rarr; Änderungen runterladen und in lokale Kopie „mergen“</li>
+						<li class="fragment"><span class="pink" style="display: inline-block; width: 25%;">push</span> &rarr; Änderungen an entferntes Repository senden</li>
+						<li class="fragment"><span style="display: inline-block; width: 25%;">„synchronisieren“</span> &rarr; Automatisches runterladen und senden</li>
+					</ul>
+				</section>
+				<section data-transition="none">
+					<h1><strong>3</strong> Grundbegriffe</h1>
+
+					<h3>Was ist ein Repository?</h3>
+					<h3>Was ist ein Commit?</h3>
+					<h3>Wie werden Daten synchonisiert?</h3>
+					<h3>Was ist ein Branch?</h3>
+
+					<ul style="width: 100%;">
+						<li class="fragment"><span class="pink" style="display: inline-block; width: 25%;">branch</span> &rarr; Ermöglicht paralleles arbeiten an unterschiedlichen „Features“</li>
+						<li class="fragment"><span class="pink" style="display: inline-block; width: 25%;">merge</span> &rarr; Bezeichnet das zusammenführen unterschiedlicher branches</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1><strong>4</strong> Konflikte</h1>
+					<ul>
+						<li class="fragment">Wann treten Konflikte auf?</li>
+						<li class="fragment" style="list-style: none;">&rarr; Bei Änderungen, die nicht automatisch mergebar sind.</li>
+						<li class="fragment" style="list-style: none;">&rarr; Beim synchonisieren (<span class="pink">pull</span> und <span class="pink">mergen</span>)</li>
+						<li class="fragment">Kann man das Risko reduzieren?</li>
+						<li class="fragment" style="list-style: none;">&rarr; Häufig(er) synchonisieren</li>
+						<li class="fragment" style="list-style: none;">&rarr; Mit „Umbauarbeiten“ (etwa neu formatieren) zurückhalten</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1><strong>5</strong> GitHub und <strong>WBA1</strong></h1>
+					<ul>
+						<li class="fragment">
+							Der Standardbranch heißt normalerweise „<code class="pink">master</code>“,
+							bei uns aber „<code class="pink">gh-pages</code>“!?
+						</li>
+						<li class="fragment">
+							Unsere <a href="https://github.com/fh-koeln/wba1-2013/wiki/GitHub-und-WBA1#wiki-konventionen-f%C3%BCr-die-arbeit-am-repository-">Konventionen für die Arbeit am Repository</a>:
+						</li>
+						<li class="fragment">
+							<ul>
+								<li>
+									Wir verwenden <span class="pink">branches</span>,
+									Schema bitte: <code>html-einstieg-a</code>
+								</li>
+								<li>
+									Ordner bitte nach dem Schema:
+									<code>2013-12-06-html-einstieg-a</code>
+								</li>
+							</ul>
+						</li>
+						<li class="fragment">
+							Wir möchten GitHub
+							<a href="https://github.com/fh-koeln/wba1-2013/pulls">Pull Requests</a>
+							für das <span class="pink">mergen</span> verwenden
+						</li>
+						<li class="fragment">
+							Wir möchten GitHub
+							<a href="https://github.com/fh-koeln/wba1-2013/issues?state=open">Issues</a>
+							für die Kommunikation (TODOs, etc.) verwenden
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1><strong>6</strong> Pitfalls und FAQ</h1>
+					<ul>
+						<li>Der GitHub Client ist <span class="pink">kein Editor</span></li>
+						<li>Git ändert und beobachtet <span class="pink">„live“</span> das Dateisystem</li>
+						<li>Warum ist der Ordner nicht da, obwohl ich den Branch angelegt habe?</li>
+						<li>Windows: Warum war ein anderer Default-Branch ausgewählt?</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1><strong>7</strong> GitHub und die <strong>WBA1-2013</strong> Projektseite</h1>
+
+					<ul>
+						<li class="fragment"><a href="https://fh-koeln.github.io/wba1-2013/">fh-koeln.github.io/wba1-2013/</a></li>
+						<li class="fragment"><code>presentations.json</code> ergänzen:</li>
+					</ul>
+					<pre class="fragment"><code data-trim>
+{
+    "presentations":
+    {
+        "2013-10-10-git/index.html":
+        {
+            "title" : "GitHub &amp; Git",
+            "authors" : ["Dominik Schilling", "Christoph Jerolimov"]
+        }
+    }
+}
+					</code></pre>
+					<ul>
+						<li class="fragment">Datei mit Präsentation in den <code>gh-pages</code> branch mergen!</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Wie geht's weiter?</h1>
+					<h3>Jetzt seid ihr dran!</h3>
+
+					<ul>
+						<li><a href="osx.html">GitHub für OSX</a></li>
+						<li><a href="windows.html">GitHub für Windows</a></li>
+						<li>
+							<a href="cli.html">Git Kommandozeilentool</a>
+							&nbsp;
+							<span class="inverted-pink">Zum Selbststudium</span>
+						</li>
+					</ul>
+				</section>
+				<!-- End of slides container. -->
+
+			</div>
+
+		</div>
+
+		<script src="./lib/js/head.min.js"></script>
+		<script src="./js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: false,
+				width: 1000,
+
+				transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+				transitionSpeed: 'fast', // default/fast/slow
+				backgroundTransition: 'none', // default/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: './plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: './plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Title of presentation -->
+		<title>Git - Einführung Kommandozeile</title>
+		<!-- Short description of presentation -->
+		<meta name="description" content="Git - Einführung Kommandozeile">
+		<!-- Author of presentation -->
+		<meta name="author" content="Dominik Schilling, Christoph Jerolimov">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="./css/reveal.min.css">
+		<link rel="stylesheet" href="./css/theme/medieninformatik.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="./lib/css/solarized_light.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="./css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="./lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<style>
+			.pink {
+				color: #dd1166;
+			}
+			.inverted-pink {
+				color: #ffffff;
+				background-color: #dd1166;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Web-basierte Anwendungen 1</h1>
+					<h2>Git - Einführung Kommandozeile</h2>
+
+					<p>10. Oktober 2013</p>
+
+					<p>
+						Studiengang Medieninformatik an der Fachhochschule Köln<br/>
+						Campus Gummersbach
+					</p>
+
+					<p style="margin-top: 100px">
+						Dominik Schilling<br/>
+						Christoph Jerolimov
+					</p>
+				</section>
+
+				<section>
+					<p>
+						Die folgenden Slides bieten eine Einführung in die Git
+						Kommandozeile zum <span class="inverted-pink">Selbststudium</span>.
+					</p>
+					<p>
+						Was ist Git &amp; GitHub?
+						Werf' einen Blick in die <a href="index.html#/2">Einführung</a>
+					</p>
+				</section>
+
+				<section>
+					<h1><strong>2</strong> Befehlsübersicht</h1>
+					<ul style="width: 100%;">
+						<li><span class="pink" style="display: inline-block; width: 20%;">init</span> &rarr; Unabhängiges lokales Repository erstellen</li>
+						<li><span class="pink" style="display: inline-block; width: 20%;">clone</span> &rarr; Entferntes Repository kopieren</li>
+						<li><span class="pink" style="display: inline-block; width: 20%;">status <span style="color: white;">&bullet;</span> diff</span> &rarr; Lokale Änderungen anzeigen</li>
+						<li><span class="pink" style="display: inline-block; width: 20%;">add <span style="color: white;">&bullet;</span> reset</span> &rarr; Änderungen zum Übernehmen (ent-)markieren</li>
+						<li><span class="pink" style="display: inline-block; width: 20%;">commit</span> &rarr; Änderungen dauerhaft übernehmen</li>
+						<li><span class="pink" style="display: inline-block; width: 20%;">pull</span> &rarr; Lokales Repository aktualisieren</li>
+						<li><span class="pink" style="display: inline-block; width: 20%;">push</span> &rarr; Änderungen an entferntes Repository senden</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1><strong>2</strong> Befehlsübersicht <strong>// Demo</strong></h1>
+
+					<pre><code>
+$ git clone git@github.com:fh-koeln/wba1-2013.git
+$ cd wba1-2013
+
+# Änderungen durchführen
+$ vim demo.txt
+$ git add .
+$ git commit -m "Änderung an der Demo"
+
+# Änderungen veröffentlichen bzw. aktualisieren:
+$ git push
+$ git pull
+					</code></pre>
+				</section>
+
+				<section>
+					<h1><strong>3</strong> Branchen</h1>
+					<p>
+						Grundüberlegung: Der master soll eine stabile,
+						funktionierende Version beinhalten und ist keine „Spielwiese“.
+					</p>
+					<p>
+						Als Lösung werden sogennante
+						<span class="inverted-pink">Branches</span>
+						verwendet:
+					</p>
+					<ul>
+						<li style="list-style: none;">&rarr; Lokal und unabhängig</li>
+
+						<li style="list-style: none;">&rarr; Pushen prinzipell optional, aber ideal für (Sub-)Teams</li>
+						<li style="list-style: none;">&rarr; <span class="inverted-pink">Umkehrschluss: Nicht alle branches sind lokal verfügbar!</span></li>
+
+						<li style="list-style: none;">
+							&rarr; <a href="https://github.com/fh-koeln/wba1-2012/wiki/Konventionen" target="_blank">WBA1 Namenskonvention</a> beachten
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1><strong>3</strong> Branch erstellen <strong>// Demo</strong></h1>
+					<pre><code>
+# Neuen Branch erstellen, verwenden und veröffentlichen:
+$ git branch git-basics
+$ git checkout git-basics
+$ git push origin git-basics
+
+# Daten kopieren oder verändern
+$ cp -r yyyy-mm-dd-lehreinheit/ 2013-10-10-git/
+$ git add .
+$ git commit -m "Neuer Branch für Git Basics"
+
+# Vereinfachen fürs pushen:
+$ git branch --set-upstream-to=origin/git
+$ git push
+					</code></pre>
+
+					<a href="https://github.com/fh-koeln/wba1-2012/branches" target="_blank">Branches</a> auf GitHub:
+					<a href="https://github.com/fh-koeln/wba1-2012" target="_blank">master</a>
+					<a href="https://github.com/fh-koeln/wba1-2012/tree/git-basics" target="_blank">git-basics</a>
+				</section>
+
+				<section>
+					<h1><strong>3</strong> Branch pullen <strong>// Demo</strong></h1>
+					<pre><code>
+# Vorhandenen Branch pullen:
+$ git branch git-basics origin/git-basics
+$ git checkout git-basics
+
+# Zwischen Branch wechseln:
+$ git checkout master
+$ git checkout git-basics
+$ ...
+
+# Aktuellen branch kontrollieren:
+$ git branch
+  master
+* git-basics
+					</code></pre>
+				</section>
+
+				<section>
+					<h1><strong>4</strong> Mergen</h1>
+					<p>
+						Immer wenn Ergebnisse zusammengeführt werden.
+					</p>
+					<p>
+						Passiert im Idealfall automatisch. :-)
+					</p>
+
+					<ul>
+						<li>Bei <span class="pink">parallelen Arbeiten</span> (gleicher Branch)</li>
+						<li><span class="pink">Ergebnisse veröffentlichen</span> (eigener Branch &rarr; Master)</li>
+						<li><span class="pink">Branch aktualisieren</span> (Master &rarr; eigener Branch)</li>
+						<li><span class="pink">Pull Requests</span> &rarr; verschiebt die Verantwortung</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1><strong>4</strong> Mergen <strong>// Demo</strong></h1>
+					<pre><code>
+$ git pull                      # Implizierter Commit bei merges!
+
+# Branches hin- und her mergen, hier git-basics -> master
+$ git branch
+* master
+  git-basics
+
+$ git merge git-basics          # Implizierter Commit bei merges!
+$ git push
+
+# Geht auch umgekehrt:
+$ git checkout git-basics
+$ git pull                      # Implizierter Commit bei merges!
+$ git merge master              # Implizierter Commit bei merges!
+$ git push
+					</code></pre>
+				</section>
+
+				<section>
+					<h1><strong>5</strong> Konflikte</h1>
+					<ul>
+						<li>Wann treten Konflikte auf?</li>
+						<li style="list-style: none;">&rarr; Bei Änderungen, die nicht automatisch mergebar sind.</li>
+						<li style="list-style: none;">&rarr; Bei <span class="pink">git pull</span>.</li>
+						<li style="list-style: none;">&rarr; Bei <span class="pink">git merge</span>.</li>
+						<li>Kann man das Risko reduzieren?</li>
+						<li style="list-style: none;">&rarr; Häufig(er) pullen und mergen</li>
+						<li style="list-style: none;">&rarr; Umbauarbeiten, wie Formatierungen, zurückhalten oder absprechen</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1><strong>5</strong> Konflikte <strong>// Demo</strong></h1>
+					<pre><code>
+alice $ vim demo.txt
+alice $ git commit -am "Alice commit"
+alice $ git push
+
+bob $ vim demo.txt
+bob $ git commit -am "Bobs commit"
+bob $ git pull                  # KONFLIKT
+bob $ vim demo.txt              # KONFLIKT manuell lösen
+bob $ git commit -am "Solved!"
+bob $ git push
+					</code></pre>
+				</section>
+
+				<section>
+					<h1>Vielen Dank</h1>
+
+					<ul>
+						<li><a href="https://github.com/fh-koeln/wba1-2012/wiki/Git-CheatSheet" target="_blank">Git CheatSheet</a></li>
+						<li><a href="https://github.com/fh-koeln/wba1-2012/wiki/GitHub-Mac-GUI" target="_blank">GitHub Mac GUI</a></li>
+						<li><a href="https://github.com/fh-koeln/wba1-2012/wiki/Git-Windows-GUI" target="_blank">GitHub Windows GUI</a></li>
+					</ul>
+				</section>
+				<!-- End of slides container. -->
+
+			</div>
+
+		</div>
+
+		<script src="./lib/js/head.min.js"></script>
+		<script src="./js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: false,
+				width: 1000,
+
+				transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+				transitionSpeed: 'fast', // default/fast/slow
+				backgroundTransition: 'none', // default/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: './plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: './plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
