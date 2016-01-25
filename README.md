@@ -9,7 +9,7 @@ and other authors, if specified.
 
 **Linked content (simular content on other websites, other repositories, ...) is not affected by this licence. Even if this content is derived from the same author.**
 
-<br/>
+<br/><br/>
 
 ### Upcoming
 
@@ -20,13 +20,13 @@ and other authors, if specified.
 
 #### Einführung in react-native (für "mobile native" Entwickler)
 
-2016-02 @ [mobile.cologne]()
+2016-02 @ [mobile.cologne](http://mobile.cologne/)
 
 #### Einführung in react-native
 
 2016-05-04 @ [PottJS](http://pottjs.de/), Dortmund
 
-<br/>
+<br/><br/>
 
 ### History
 
