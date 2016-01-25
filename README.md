@@ -1,11 +1,13 @@
 ## Talks
 
-Slides and material by Christoph Jerolimov, [@jerolimov](https://twitter.com/jerolimov)
+Slides and other material by Christoph Jerolimov, [@jerolimov](https://twitter.com/jerolimov)
 and other authors, if specified.
 
-The work is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/) if nothing else is specified.
+**The work in this repository is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/), if nothing else is specified for a specific folder.**
 
-<a rel="license" hrefhttp://creativecommons.org/licenses/by-sa/4.0/=""><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+
+**Linked content (simular content on other websites, other repositories, ...) is not affected by this licence. Even if this content is derived from the same author.**
 
 <br/>
 
