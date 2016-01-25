@@ -2,7 +2,18 @@
 
 ## Upcoming
 
-tba.
+#### Einführung in react.js und react-native
+
+2016-01-27 @ WebWorker Cologne,
+[Event page](http://www.meetup.com/de/WebWorker-Cologne/events/227777445/)
+
+#### Einführung in react-native (für "mobile native" Entwickler)
+
+2016-02 @ [mobile.cologne]()
+
+#### Einführung in react-native
+
+2016-05-04 @ [PottJS](http://pottjs.de/), Dortmund
 
 ## History
 
