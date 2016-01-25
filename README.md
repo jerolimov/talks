@@ -48,7 +48,7 @@ and other authors, if specified.
 #### Einführung Git & GitHub
 
 2013-10-10 @ TH-Köln w/ [Dominik Schilling](https://twitter.com/ocean90),
-[online slides](http://jerolimov.github.io/talks/2013-10-10-git/)
+[online slides](http://jerolimov.github.io/talks/2013-10-10-git-and-github/)
 
 #### Einführung in die mobile, crossplattform Spieleentwicklung mit libGDX
 
@@ -62,7 +62,7 @@ and other authors, if specified.
 #### Grundlagen Git und GitHub
 
 2012-12-06 @ TH-Köln w/ [Dominik Schilling](https://twitter.com/ocean90),
-[online slides](http://jerolimov.github.io/talks/2012-12-06-git-basics/)
+[online slides](http://jerolimov.github.io/talks/2012-12-06-git-and-github/)
 
 #### Deine erste Android app in 45 Minuten
 
