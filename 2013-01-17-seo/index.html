@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>WBA1 - SEO</title>
+
+		<meta name="description" content="Lehreinheit">
+		<meta name="author" content="Mark Steven Buder, Christoph Jerolimov">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="./css/reveal.css">
+		<link rel="stylesheet" href="./css/theme/wba.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="./lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="./css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="./lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+                    <h1>WBA1 - SEO</h1>
+                    <h2>Medieninformatik</h2>
+                    <p>17. Januar 2013</p>
+                    <p>
+                        Studiengang Medieninformatik an der Fachhochschule Köln<br/>
+                        Campus Gummersbach
+                    </p>
+					<p style="margin-top: 100px">
+                        Mark Steven Buder
+                        <a href="https://github.com/smithes">github</a><br />
+                        Christoph Jerolimov
+                        <a href="https://github.com/jerolimov">github</a><br />
+                    </p>
+				</section>
+
+                <section>
+                    <h1>
+	                    <strong>S</strong>earch <strong>E</strong>ngine <strong>O</strong>ptimization
+                    </h1>
+                    <ul>
+                        <li><span class="pink">Onpage</span>
+	                        <ul>
+	                            <li>Einführung</li>
+	                            <li>Content</li>
+	                            <li>Struktur &amp; Semantik</li>
+	                        </ul>
+                        </li>
+	                    <li class="fragment"><span class="pink">Offpage</span>
+	                        <ul>
+	                            <li>Tools zur Analyse</li>
+	                            <li>Linkpartnerschaften</li>
+	                            <li>Werbung</li>
+	                        </ul>
+                        </li>
+                    </ul>
+				</section>
+				<section>
+					<h1>Wie funktioniert eine Suchmaschine?</h1>
+					<ul>
+						<li class="fragment">Versucht das surfverhalten der Nutzer nachzubilden</li>
+						<li class="fragment"><span class="pink">Crawler</span> rufen Seiten automatiert &amp; regelmäßig ab</li>
+						<li class="fragment">
+							Der <span class="pink">Indexierungsvorgang</span> interpretiert das Markup ...<br/>
+							(Implementierung i.d.R. Geschäftsgeheimnis)
+						</li>
+						<li class="fragment">
+							... und die semantische Bedeutung dessen:
+							<ul>
+								<li class="fragment">Bewertet die Wichtigkeit (&lt;title&gt;, &lt;h1&gt;, &lt;small&gt;, ...)</li>
+								<li class="fragment">Folgt links für eine weitere Indizierung (&lt;a&gt; und &lt;area&gt;)</li>
+							</ul>
+					</ul>
+				</section>
+                <section>
+                    <h1>Content: <strong>Grundlagen</strong></h1>
+                    <ul>
+                        <li>Bewusstsein verschiedener Zielgruppen
+                            <ul>
+                                <li>Neulinge</li>
+                                <li>Kenner</li>
+                            </ul>
+                        </li>
+                         <li class="fragment">Saubere Sprache</li>
+                         <li class="fragment">Strukurierter Text</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>Content: <strong>Ankertext</strong></h1>
+                    <ul>
+                        <li>Kurz, aussagekräftig & zusammenhängend</li>
+                        <li>Selbst verfasst</li>
+                        <li>Sinnvolle interne Links für den Nutzer - nicht für Suchmaschienen!</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>Content <strong style="background-color: #dd1166; -webkit-transform:rotate(10deg); display:inline-block; margin-left: -10px">
+                        Don'ts
+                    </strong></h1>
+
+                            <ul>
+	                            <li>Hier klicken</li>
+                                <li>Text in Bildern</li>
+                                <li>Wiederholender Inhalt</li>
+                                <li>Text für Suchmaschienen schreiben</li>
+                            </ul>
+                </section>
+
+                <section>
+                    <h1>Struktur: <strong>Domainname &amp; URL</strong></h1>
+                    <ul>
+                    <li>Worte benutzen</li>
+                    <li>Einfache Verzeichnis-Struktur <a href="http://www.apple.com/de/iphone/from-the-app-store/">Beispiel</a></li>
+                    <li>Eine URL pro Dokument <a href="http://www.heise.de/newsticker/meldung/Oracle-patcht-kritische-Java-Luecke-1782915.html">Negativ Beispiel</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>Struktur: <strong>Titel-Tag</strong></h1>
+                    <ul>
+                        <li>Innerhalb des head-Tags</li>
+                         <li>Üblicherweiße ähnlich der &lt;h1&gt; </li>
+                        <li>Erste Zeile der Suchergebnisse</li>
+                    </ul>
+
+                    <pre><code>...
+&lt;head&gt;
+    &lt;title&gt;Achsen - Skateshop24&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Achsen&lt;/h1&gt;
+    ...</code></pre>
+                </section>
+                <section>
+                    <h1>Struktur: <strong>Titel</strong>
+                        <strong style="background-color: #dd1166; -webkit-transform:rotate(10deg); display:inline-block; margin-left: -10px">
+                        Dos
+                        </strong>
+                    </h1>
+                            <ul>
+                            <li>Content der Seite beschreiben</li>
+                            <li>Einen Titel für jede Seite</li>
+                            <li>Kurz aber Aussagekräftig</li>
+                            </ul>
+                </section>
+
+                <section>
+                    <h1>Struktur: <strong>Meta-Tag</strong></h1>
+                    <ul>
+                        <li><span class="pink">description</span> beschreibt die Seite<br/>
+	                        wird verwendet, falls kein sinnvoller Absatz vorhanden ist</li>
+	                    <li><span class="pink">keywords</span> Versteckte Schlüsselwörter, z.B. für Synonyme</li>
+                    </ul>
+                <pre><code>...
+&lt;head&gt;
+    &lt;title&gt;Achsen - Skateshop24&lt;/title&gt;
+    &lt;meta name="description" content="Auf Skateshop24 findest du rund um die Uhr eine riesige Auswahl an Achsen für dein Skateboard" /&gt;
+    &lt;meta name="keywords" content="Skaten, Skateshop, Rollen, Bretter;" /&gt;
+&lt;/head&gt;
+...</code></pre>
+                </section>
+
+                <section>
+                    <h1>Struktur: <strong>Meta-Tag</strong>
+                    <strong style="background-color: #dd1166; -webkit-transform:rotate(10deg); display:inline-block; margin-left: -10px">
+                        Don'ts
+                    </strong>
+                    </h1>
+                            <ul>
+                            <li>Die ganze Seite reinkopieren</li>
+                            <li>Description mit Keywords vollstopfen</li>
+	                        <li>Keine unnötigen Keywords ohne Zusammenhang</li>
+                            <li>Ständige Verwendung der selbem Description</li>
+                            </ul>
+                </section>
+                <section>
+                    <h1>Struktur: <strong>Semantische Auszeichnung</strong></h1>
+	                <ul>
+		                <li>Verwendung von Überschriften, etc.</li>
+		                <li>Durchgängige Benutzung</li>
+		                <li>HTML5 schreibt nur eine H1-Überschrift vor</li>
+	                </ul>
+	                <pre><code>&lt;h1&gt;Achsen&lt;/h1&gt;
+    ...
+    &lt;strong&gt;Wichtig: ...&lt;/strong&gt;</code></pre>
+	                <small>statt</small>
+	                <pre><code>&lt;p class="header"&gt;Achsen&lt;/p&gt;
+    ...
+    &lt;b&gt;Wichtig???&lt;/b&gt;</code></pre>
+                </section>
+                <section>
+                    <h1>Struktur: <strong>Bilder</strong></h1>
+                    <ul>
+                        <li>Inhaltlich passende Titel - trotzdem kurz</li>
+	                    <li><span class="pink">alt</span> Attribut wenn das Bild feld</li>
+	                    <li><span class="pink">title</span> Attribut für mehr Informationen</li>
+                        <li>Ein Verzeichnis für alle Bilder</li>
+                        <li>Gebräuchliche Formate</li>
+                    </ul>
+                    <pre><code>&lt;img src="../images/Rollen57.jpg" alt="Rollen 57 - Bigfoot"/&gt;</code></pre>
+                </section>
+
+                <section>
+                    <h1>Struktur: <strong>Bilder</strong>
+                    <strong style="background-color: #dd1166; -webkit-transform:rotate(10deg); display:inline-block; margin-left: -10px">
+                        Don'ts
+                    </strong></h1>
+                            <ul>
+                            <li>Standard Dateinamen</li>
+                            <li>Lange Alt-Texte - kann als Spam angesehen werden</li>
+                            <li>Voll mit Keywords</li>
+                            </ul>
+                </section>
+
+
+				<section>
+					<h1><strong style="background-color: #dd1166; -webkit-transform:rotate(-5deg); display:inline-block; margin: 60px 0 40px -10px;">
+						Hier geht es zur Aufgabe
+                    </strong></h1>
+					<div style="text-align: center;">
+						<a href="http://bit.ly/seo-tut" style="border-bottom: 5px solid #77cc00; font-size: 92px; -webkit-transition: none; -webkit-perspective-origin: 0; -webkit-perspective: none;">bit.ly/seo-tut</a>
+					</div>
+
+                </section>
+
+				<section>
+					<h1>Crawler steuern: <strong>Grundlagen</strong></h1>
+					<ol>
+						<li class="fragment"><span class="pink">Download</span> der Webseite</li>
+						<li class="fragment"><span class="pink">Auswertung</span> weiterer Links -> Crawler-„Todo“-Liste</li>
+						<li class="fragment"><span class="pink">Bewertung</span> des Inhalts (Semantik wie Überschriften)</li>
+						<li class="fragment"><span class="pink">Indizierung</span> des Inhalts -> Wortstammsuche, Synonyme, etc.</li>
+					</ol>
+				</section>
+
+				<section>
+					<h1>Crawler steuern: <strong>Warum?</strong></h1>
+					<ol>
+						<li class="fragment">Inhalt aktualisiert sich schneller als der Crawler kommt</li>
+						<li class="fragment">Für dynamisch erstellte Links</li>
+						<li class="fragment">Indizierung nicht gewollt, etwa Mitarbeiter oder Richtigstellung</li>
+						<li class="fragment">Für User generated Content, wegen Backlinks/Spam</li>
+					</ol>
+				</section>
+
+				<section>
+					<h1>Crawler steuern: <strong>Anker-Tags</strong></h1>
+					<ul>
+						<li>Links können Steuerbefehle für Suchmaschinen beinhalten</li>
+						<li><span class="pink">nofollow</span> verhindert das die Zieladresse indiziert wird</li>
+					</ul>
+					<pre class="fragment"><code>&lt;nav&gt;
+	&lt;a href="/"&gt;Home&lt;/a&gt;
+	&lt;a href="/mitarbeiter.html" rel="nofollow"&gt;Mitarbeiter&lt;/a&gt;
+	&lt;a href="/kontakt.html"&gt;Kontakt&lt;/a&gt;
+	...</code></pre>
+				</section>
+
+				<section>
+					<h1>Crawler steuern: <strong>Meta-Tags</strong></h1>
+					<ul>
+						<li>Meta-Tag definiert Steuerbefehle Dokumentenweit</li>
+						<li><span class="pink">noindex</span> verhindert indexierung der aktuellen Seite</li>
+						<li><span class="pink">nofollow</span> legt Standard für Anker-Tags fest</li>
+					</ul>
+					<pre class="fragment"><code>&lt;head&gt;
+	&lt;meta name="robots" content="noindex, nofollow" /&gt;
+	...
+&lt;/head&gt;
+&lt;body&gt;
+	...</code></pre>
+				</section>
+
+				<section>
+					<h1>Crawler steuern: <strong>Meta-Tags</strong></h1>
+					<ul>
+						<li>Meta-Tag definiert Steuerbefehle Dokumentenweit</li>
+						<li>„noindex“ verhindert indexierung der aktuellen Seite</li>
+						<li>„nofollow“ legt Standard für Anker-Tags fest</li>
+						<li class="pink">Kann pro Anker-Tag überschrieben werden</li>
+					</ul>
+					<pre><code>&lt;head&gt;
+	&lt;meta name="robots" content="noindex, nofollow" /&gt;
+	...
+&lt;/head&gt;
+&lt;body&gt;
+	...
+	&lt;a href="/" rel="follow"&gt;Home&lt;/a&gt;
+	&lt;a href="/mitarbeiter.html"&gt;Mitarbeiter&lt;/a&gt;
+	&lt;a href="/kontakt.html" rel="follow"&gt;Kontakt&lt;/a&gt;</code></pre>
+				</section>
+
+				<section>
+					<h1>Crawler steuern: <strong>Robots Exclusion Protocol</strong></h1>
+					<ul>
+						<li>Text-Datei mit Regeln zur Suchmaschinen-Steuerung</li>
+						<li>Per Konvention wird der Pfad /robots.txt verwendet</li>
+					</ul>
+					<pre><code>User-agent: *
+Disallow: /mitarbeiter.html
+Disallow: /images/</code></pre>
+				</section>
+
+                <section>
+                </section>
+
+			</div>
+
+		</div>
+
+		<script src="./lib/js/head.min.js"></script>
+		<script src="./js/reveal.min.js"></script>
+
+		<script>
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: './lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+					{ src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: './lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: './lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: './plugin/zoom-js/zoom.js', condition: function() { return !!document.body.classList; } },
+					{ src: './socket.io/socket.io.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+					{ src: './plugin/speakernotes/client.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } }
+				]
+			});
+
+		</script>
+	</body>
+</html>

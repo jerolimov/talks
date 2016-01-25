@@ -1,0 +1,24 @@
+* {
+    font-family: myriad-pro, sans-serif;
+    color:#000;
+}
+
+body {
+	width: 780px;
+	margin: auto;
+}
+.header {
+	font-size: 2em;
+}
+.header2 {
+	font-size: 1.6em;
+}
+.header3 {
+	font-size: 1.4em;
+}
+.header4 {
+	font-size: 1.2em;
+}
+.white{
+color:#fff;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SEO tutorial</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="lib/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css" media="screen">
+		html, body {
+			width:  100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+		#editor {
+			margin: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 50%;
+		}
+		#output {
+			margin: 0;
+			position: absolute;
+			top: 0;
+			right: 20px;
+			width: 50%;
+		}
+		#iframe {
+			margin: 0;
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
+			width: 48%;
+			border: 0;
+		}
+		#rating {
+			font-family: Arial;
+			font-size: 28px;
+			float: right;
+			border: 2px solid #cecece;
+			background-color: #d7d7d7;
+			margin: 20px;
+			padding: 10px;
+		}
+	</style>
+	<script src="tutorial.js"></script>
+	<script>
+		var editor, dom;
+		function updateContent(html) {
+			$('#iframe').contents().find('html').html(html);
+			dom = $('#iframe').contents().find('html');
+
+			var rating = rating = calcRating(dom);
+			var c = (rating - 50) * 3;
+			if (c < 0) c = 0;
+			if (c > 255) c = 255;
+
+			var r = 255 - c;
+			var g = 255 - r;
+
+			$('#rating').html('Rating: ' + parseInt(rating));
+			$('#rating').attr('style', 'background-color: rgb(' + r + ', ' + g + ', 0)');
+		}
+	</script>
+</head>
+<body>
+
+<!-- TODO das hier sollte besser nachgeladen werden -->
+<pre id="editor">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Index&lt;/title&gt;
+	&lt;meta name="description" content="Loremu ipsums doloar dsit aamet,
+		consedctetuer addipiscing eldit. Aendean commdodo lidgula egedt doslor.
+        Aeneand madssa. dCum dsociis ndatoque penatibdus et madgnis dis parturient
+		montes, naascetur ridiculus mus.
+        fasd quaam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+		Nulala ddasda madssa quids endim.
+        sds pedde judsto, fringillad vdel, alifquet necf, vulfputate egfet, afrcu."/&gt;
+	&lt;link href="demo.css" rel="stylesheet" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p class="header"&gt;Skateshop24&lt;/p&gt;
+
+&lt;p class="navigation"&gt;
+&lt;a href="index.html"&gt;Home&lt;/a&gt;
+&lt;a href="bretter.html"&gt;Bretter&lt;/a&gt;
+&lt;a href="rollen.html"&gt;Rollen&lt;/a&gt;
+&lt;a href="mitarbeiter.html"&gt;Mitarbeiter&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p class="header2"&gt;Achsen&lt;/p&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+	ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+	dis parturient montes, nascetur ridiculus mus.
+	Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+	Nulla consequat massa quis enim.
+	Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.&lt;br&gt;
+&lt;/p&gt;
+&lt;p class="header4"&gt;Geschichte&lt;/p&gt;
+&lt;p&gt;In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+	Nullam dictum felis eu pede mollis pretium.
+	Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+	vulputate eleifend tellus.
+	Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+	Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+&lt;/p&gt;
+
+&lt;p&gt;Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
+	Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
+	ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
+	condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque
+	sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar,
+	hendrerit id, lorem.&lt;/p&gt;
+
+&lt;img src="Bild1.jpg" width="320px"
+		titel="Das aller beste Bild aller Zeiten. es ist so toll und super, unglaublich toll!"
+		alt="Das aller beste Bild aller Zeiten. es ist so toll und super, unglaublich toll!"&gt;
+
+&lt;p class="header4"&gt;Einfuehrung&lt;/p&gt;
+&lt;p&gt;Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
+	Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla
+	mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales,
+	augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien.&lt;/p&gt;
+
+&lt;p&gt;Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.
+	Nullam accumsan lorem in dui Cras ultricies mi eu turpis hendrerit fringilla.
+	Vestibulum ante ipsum primis in faucibus orci luctus et
+	ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia.
+	Nam pretium turpis et arcu.
+	Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum.
+	Sed aliquam ultrices mauris.
+	Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris.
+	Praesent adipiscing. Phasellus
+	ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat
+	pretium libero. Cras id dui.
+	Aenean ut&lt;/p&gt;
+
+&lt;p class="white"&gt;Vestibulum purus quam, scelerisque ut, mollis sed, nonummy
+	id, metus. Nullam accumsan lorem in dui.
+	Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis
+	in faucibus orci luctus et
+	ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam
+	pretium turpis et arcu.
+	Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed
+	aliquam ultrices mauris.
+	Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris.
+	Praesent adipiscing. Phasellus
+	ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat
+	pretium libero. Cras id dui. Aenean ut&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<script>
+	if (!editor) {
+		editor = ace.edit("editor");
+		editor.setHighlightActiveLine(true);
+		editor.setTheme("ace/theme/github");
+		editor.getSession().setMode("ace/mode/html");
+		editor.getSession().on('change', function(e) {
+			updateContent(editor.getValue());
+		});
+		setTimeout(function() {
+			updateContent(editor.getValue());
+		}, 250);
+	}
+</script>
+
+<iframe id="iframe"></iframe>
+<div id="output">
+	<span id="rating">Rating: --</span>
+</div>
+
+</body>
+</html>
