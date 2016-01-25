@@ -1,5 +1,14 @@
 ## Talks
 
+Slides and material by Christoph Jerolimov, [@jerolimov](https://twitter.com/jerolimov)
+and other authors, if specified.
+
+The work is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/) if nothing else is specified.
+
+<a rel="license" hrefhttp://creativecommons.org/licenses/by-sa/4.0/=""><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+
+<br/>
+
 ### Upcoming
 
 #### Einführung in react.js und react-native
@@ -14,6 +23,8 @@
 #### Einführung in react-native
 
 2016-05-04 @ [PottJS](http://pottjs.de/), Dortmund
+
+<br/>
 
 ### History
 
