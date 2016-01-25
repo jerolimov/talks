@@ -32,7 +32,8 @@ and other authors, if specified.
 
 #### Einführung in react-native (für JS Entwickler)
 
-2015-12-08 @ [Cologne JS](http://colognejs.de/)
+2015-12-08 @ [Cologne JS](http://colognejs.de/),
+[slides as PDF](2015-12-08-react-native/react-native-introduction-colognejs.pdf)
 <!-- [meetup.com](http://www.meetup.com/de/Cologne-js/events/227015933/) -->
 
 #### CocoaPods Introduction
