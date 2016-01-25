@@ -1,0 +1,29 @@
+ /* ... CSS Regeln für die HTML Formatierung | Irrelevant für die Aufgaben ... */
+#uebung1{  margin:0 auto; width:700px; webkit-box-shadow: -1px 2px 19px #d1d1d1;	/* webkit browser*/ -moz-box-shadow: -1px 2px 19px #d1d1d1;	/* firefox */ box-shadow: -1px 2px 19px #d1d1d1;}
+#uebung2{  margin:0 auto; width:700px; webkit-box-shadow: -1px 2px 19px #d1d1d1;	/* webkit browser*/ -moz-box-shadow: -1px 2px 19px #d1d1d1;	/* firefox */ box-shadow: -1px 2px 19px #d1d1d1;}
+
+.thick{font-weight:bold; text-transform:uppercase;}
+.special{color:#dd1166; text-align:right; padding:0 1em 0 1em;}
+
+ /* ... CSS Regeln für die Überschriften | Irrelevant für die Aufgaben ... */
+h1 { color:#ffffff; text-align:center; padding:0.5em 1em 0.5em 1em; background-color:#92d633; font-family:Arial,Helvetica,sans-serif;}
+h1.two { color:#ffffff; text-align:center; padding:0.5em 1em 0.5em 1em; background-color:#dd1166; font-family:Arial,Helvetica,sans-serif;}
+h2 { color:#92bbc9; text-align:right; padding:0 1em 0 1em; font-family:Arial,Helvetica,sans-serif;}
+h2.two { color:#ffffff; text-align:center; padding:0 1em 0 1em; background-color:#92d633; font-family:Arial,Helvetica,sans-serif;}
+
+ /* ... CSS Regeln für Absätze | Aufgabe 1 und 2 ... */
+p  {padding:0 1em 0.5em 1em; font-family:Arial,Helvetica,sans-serif;}
+p.rot  {color:#dd1166; padding:0 1em 0.5em 1em; font-family:Arial,Helvetica,sans-serif;}
+p.blau  {color:#92bbc9; padding:0 1em 0.5em 1em; font-family:Arial,Helvetica,sans-serif;}
+p.gruen  {color:#92d633; padding:0 1em 0.5em 1em; font-family:Arial,Helvetica,sans-serif;}
+p.braun  {color:#694e41; padding:0 1em 0.5em 1em; font-family:Arial,Helvetica,sans-serif;}
+p.one  {padding:0 1em 0 1em; font-family:Arial,Helvetica,sans-serif; text-decoration:line-through;}
+p.two  {padding:0.2em 1em 0.2em 1em; font-family:Arial,Helvetica,sans-serif; border:dotted; border-width:thin;}
+p.links {padding:0 1em 0.5em 1em; font-family:Arial,Helvetica,sans-serif; text-align:left;}
+p.mitte {padding:0 1em 0.5em 1em; font-family:Arial,Helvetica,sans-serif; text-align:center;}
+p.rechts {padding:0 1em 0.5em 1em; font-family:Arial,Helvetica,sans-serif; text-align:right;}
+
+ /* ... CSS Regeln für Bilder | Aufgabe 3 ... */
+#bild1{margin:0 auto; display: block; border:solid; border-width:thin; padding:0.5em 1em 0.5em 1em;}
+#bild2{margin:0 auto; display: block; border:solid; border-width:thin; padding:1.5em 1em 0.5em 3em;}
+

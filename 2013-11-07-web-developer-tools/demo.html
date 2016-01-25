@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Demo</title>
+		<style type="text/css">
+			body {
+				line-height: 2em;
+			}
+			h1 {
+				display: inline-block;
+				margin: 1em;
+				border: 0.5em dotted gray;
+				padding: 1em;
+			}
+			span {
+				display: inline-block;
+				width: 200px;
+				background-color: gray;
+			}
+		</style>
+		<script type="text/javascript">
+			/* Absichtlich nicht ganz korrekt! Finde die Fehler... :-) */
+			
+			function logInput {
+				input = document.getElementByTagName("input")
+				output = document.getElementByTagName("span")
+				console.log(input)
+				console.log(output)
+				output = input
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Demo</h1>
+
+		<ul>
+			<li>Lorem ipsum dolor</li>
+			<li>Dolore magna aliquyam</li>
+			<li>At vero eos et accusam</li>
+		</ul>
+
+		<form>
+			Input: <input /><br/>
+			Output: <span>&nbsp;</span><br/>
+			<button type="button" onclick="logInput();">Log Input</button>
+		</form>
+	</body>
+</html>
