@@ -38,7 +38,7 @@ and other authors, if specified.
 #### CocoaPods Introduction
 
 2014-04-24 @ [CocoaHeads Aachen](http://hci.rwth-aachen.de/cocoaheads),
-[slides as PDF](http://hci.rwth-aachen.de/tiki-download_wiki_attachment.php?attId=2163&download=y)
+[slides as PDF](2014-04-24-cocoapods/cocoapods-introduction-cocoaheads-aachen.pdf)
 
 #### Einführung Web Developer Tools (Chrome und Firefox)
 
