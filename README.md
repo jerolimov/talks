@@ -1,6 +1,6 @@
-# Talks
+## Talks
 
-## Upcoming
+### Upcoming
 
 #### Einführung in react.js und react-native
 
@@ -15,7 +15,7 @@
 
 2016-05-04 @ [PottJS](http://pottjs.de/), Dortmund
 
-## History
+### History
 
 #### Einführung in react-native (für JS Entwickler)
 
@@ -37,9 +37,9 @@
 2013-10-10 @ TH-Köln w/ [Dominik Schilling](https://twitter.com/ocean90),
 [online slides](http://jerolimov.github.io/talks/2013-10-10-git/)
 
-#### [4h Workshop] Einführung in die mobile, crossplattform Spieleentwicklung mit libGDX
+#### Einführung in die mobile, crossplattform Spieleentwicklung mit libGDX
 
-2013-05-25 @ LinuxTag, Berlin mit [Michael Kleinhenz](https://twitter.com/quendor)
+2013-05-25 @ LinuxTag, Berlin, Workshop w/ [Michael Kleinhenz](https://twitter.com/quendor)
 
 #### Grundlagen SEO
 
@@ -48,7 +48,7 @@
 
 #### Grundlagen Git und GitHub
 
-2012-12-06 @ TH-Köln mit [Dominik Schilling](https://twitter.com/ocean90),
+2012-12-06 @ TH-Köln w/ [Dominik Schilling](https://twitter.com/ocean90),
 [online slides](http://jerolimov.github.io/talks/2012-12-06-git-basics/)
 
 #### Deine erste Android app in 45 Minuten
