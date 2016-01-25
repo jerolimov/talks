@@ -1,0 +1,342 @@
+/**
+ * Railslove theme for reveal.js.
+ */
+
+/*********************************************
+ * FONT-FACE DEFINITIONS
+ *
+ * font-family:'VAG Rounded W01 Black';
+ * font-family:'VAG Rounded W01 Bold';
+ * font-family:'VAG Rounded W01 Light';
+ * font-family:'VAGRoundedLTW10-Light';
+ * font-family:'VAG Rounded W01 Thin';
+ * font-family:'VAG Rounded LT W10 Thin';
+ *
+ *********************************************/
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+
+body {
+	font-family: 'VAG Rounded W01 Light', sans-serif;
+	font-size: 30px;
+	color: #343434;
+}
+
+::-moz-selection {
+	background: #18bd31;
+	color: white;
+}
+::-webkit-selection {
+	background: #18bd31;
+	color: white;
+}
+::selection {
+	background: #18bd31;
+	color: white;
+}
+
+/*********************************************
+ * BACKGROUND STATES
+ *********************************************/
+
+.reveal .state-background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	-webkit-transition: background 800ms ease;
+	   -moz-transition: background 800ms ease;
+	    -ms-transition: background 800ms ease;
+	     -o-transition: background 800ms ease;
+	        transition: background 800ms ease;
+}
+.green .reveal .state-background {
+	background: #18bd31;
+}
+.purple .reveal .state-background {
+	background: #a400b4;
+}
+.orange .reveal .state-background {
+	background: #fd5a07;
+}
+.blue .reveal .state-background {
+	background: #139adf;
+}
+
+.green 	.reveal.cube .slides section:not(.stack):before,
+.purple .reveal.cube .slides section:not(.stack):before,
+.orange .reveal.cube .slides section:not(.stack):before,
+.blue 	.reveal.cube .slides section:not(.stack):before,
+.green 	.reveal.page .slides section:not(.stack):before,
+.purple .reveal.page .slides section:not(.stack):before,
+.orange .reveal.page .slides section:not(.stack):before,
+.blue 	.reveal.page .slides section:not(.stack):before {
+	background: none !important;
+}
+
+.green .reveal h1,
+.green .reveal h2 {
+	color: #18bd31;
+}
+.purple .reveal h1,
+.purple .reveal h2 {
+	color: #a400b4;
+}
+.orange .reveal h1,
+.orange .reveal h2 {
+	color: #fd5a07;
+}
+.blue .reveal h1,
+.blue .reveal h2 {
+	color: #139adf;
+}
+
+.green 	.reveal h1,
+.green 	.reveal h2,
+.purple .reveal h1,
+.purple .reveal h2,
+.orange .reveal h1,
+.orange .reveal h2,
+.blue 	.reveal h1,
+.blue 	.reveal h2 {
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 5px;
+	position: relative;
+	margin-bottom: 1em;
+}
+
+	.green  .reveal h1:after,
+	.green 	.reveal h2:after,
+	.purple .reveal h1:after,
+	.purple .reveal h2:after,
+	.orange .reveal h1:after,
+	.orange .reveal h2:after,
+	.blue 	.reveal h1:after,
+	.blue 	.reveal h2:after {
+		content: "";
+		display: inline-block;
+		width: 0;
+		height: 0;
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 20px solid #fff;
+		position: absolute;
+		left: 30px;
+		bottom: -20px;
+	}
+
+.green 	.reveal p,
+.purple .reveal p,
+.orange .reveal p,
+.blue 	.reveal p {
+	padding-left: 30px;
+}
+
+.green 	.reveal p,
+.purple .reveal p,
+.orange .reveal p,
+.blue 	.reveal p,
+.green 	.reveal p a,
+.purple .reveal p a,
+.orange .reveal p a,
+.blue 	.reveal p a {
+	color: white;
+}
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+	margin: 0 0 1em 0;
+	color: #18bd31;
+	font-family: 'VAG Rounded W01 Bold', sans-serif;
+	line-height: 1em;
+	text-align: left;
+}
+
+.reveal h1 { font-size: 2.0em; }
+.reveal h2 { font-size: 1.3em;	}
+.reveal h3 { font-size: 1.55em;	}
+.reveal h4 { font-size: 1em;	}
+
+.reveal h2 { padding-top: 30px; }
+
+/*********************************************
+ * BUBBLE HEADLINES
+ *********************************************/
+
+ .reveal h2.bubble {
+ 	background-color: #18bd31;
+ 	color: white;
+ 	padding: 30px;
+ 	border-radius: 5px;
+ 	position: relative;
+ 	margin-bottom: 1em;
+ }
+	 .reveal h2.bubble:after {
+	 	content: "";
+	 	display: inline-block;
+	 	width: 0;
+	 	height: 0;
+	 	border-left: 20px solid transparent;
+	 	border-right: 20px solid transparent;
+	 	border-top: 20px solid #18bd31;
+	 	position: absolute;
+	 	left: 30px;
+	 	bottom: -20px;
+	 }
+
+ .reveal h2.bubble ~ p {
+ 	padding-left: 30px;
+ }
+
+/*********************************************
+ * LINKS
+ *********************************************/
+
+.reveal a:not(.image) {
+	color: #18bd31;
+	text-decoration: none;
+	line-height: 1.3em;
+
+	-webkit-transition: color .15s ease;
+	   -moz-transition: color .15s ease;
+	    -ms-transition: color .15s ease;
+	     -o-transition: color .15s ease;
+	        transition: color .15s ease;
+}
+	.reveal a:not(.image):hover {
+		text-shadow: none;
+		border: none;
+		border-radius: 2px;
+	}
+
+.reveal .roll span:after {
+	color: #fff;
+	background: #18bd31;
+}
+
+/*********************************************
+ * MISC
+ *********************************************/
+
+.reveal .slides {
+	text-align: left;
+}
+
+.reveal section img {
+	margin: 1em 0 0 0;
+}
+
+.reveal p, .reveal ul li, .reveal ol li {
+	margin-bottom: 1em;
+	line-height: 1.3em;
+}
+.reveal q {
+	font-style: normal;
+	color: #717171;
+}
+	.reveal q:before {
+		content: "»";
+	}
+	.reveal q:after {
+		content: " «";
+	}
+
+.reveal blockquote {
+	background-color: #c1c1c1;
+	color: #343434;
+	padding: 30px;
+	border-radius: 5px;
+	position: relative;
+	margin-bottom: 1em;
+	font-style: normal;
+	width: 100%;
+}
+	.reveal blockquote:before {
+		content: none;
+	}
+	.reveal blockquote:after {
+		content: "";
+		display: inline-block;
+		width: 0;
+		height: 0;
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 20px solid #c1c1c1;
+		position: absolute;
+		left: 30px;
+		bottom: -20px;
+	}
+
+.reveal pre {
+	margin: 1em 0;
+	font-style: normal;
+}
+
+.reveal code {
+	font-family: 'Menlo', 'Monaco', monospace;
+	padding: 1em;
+}
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+
+.reveal .controls a {
+	color: #fff;
+}
+	.reveal .controls a.enabled {
+		color: #18bd31;
+		text-shadow: 0px 0px 2px hsla(185, 45%, 70%, 0.3);
+	}
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+
+.reveal .progress {
+	background: #c1c1c1;
+}
+	.reveal .progress span {
+		background: #18bd31;
+
+		-webkit-transition: width 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+		   -moz-transition: width 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+		    -ms-transition: width 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+		     -o-transition: width 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+		        transition: width 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+	}
+
+	/*********************************************
+	 * CUBE TRANSITION
+	 *********************************************/
+
+	.reveal.cube .slides section:not(.stack):before {
+		background: rgba(255,255,255,0.9);
+	}
+
+	.reveal.cube .slides section:not(.stack):after {
+		box-shadow: 0px 95px 25px rgba(0,0,0,0);
+	}
+
+	/*********************************************
+	 * PAGE TRANSITION
+	 *********************************************/
+
+	.reveal.page .slides section:not(.stack):before {
+		background: rgba(255,255,255,0.9);
+	}
+
+	.reveal.page .slides section:not(.stack):after {
+		box-shadow: 0px 95px 25px rgba(0,0,0,0);
+	}
