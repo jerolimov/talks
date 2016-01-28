@@ -38,7 +38,7 @@ and other authors, if specified.
 2015-12-08 @ [Cologne JS](http://colognejs.de/) meetup,
 [Event page](http://www.meetup.com/de/Cologne-js/events/227015933/)
 
-[Slides as PDF](2015-12-08-react-native/react-native-introduction-colognejs.pdf)
+[Slides as PDF](http://jerolimov.github.io/talks/2015-12-08-react-native/react-native-introduction.pdf)
 
 #### CocoaPods Introduction
 
