@@ -43,7 +43,7 @@ and other authors, if specified.
 #### CocoaPods Introduction
 
 2014-04-24 @ [CocoaHeads Aachen](http://hci.rwth-aachen.de/cocoaheads) meetup,
-[slides as PDF](2014-04-24-cocoapods/cocoapods-introduction-cocoaheads-aachen.pdf)
+[slides as PDF](http://jerolimov.github.io/talks/2014-04-24-cocoapods/cocoapods-introduction.pdf)
 
 #### Einführung Web Developer Tools (Chrome und Firefox)
 
