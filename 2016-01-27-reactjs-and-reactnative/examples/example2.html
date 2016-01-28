@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--
+	<script src="https://npmcdn.com/react@0.14.2/dist/react.js"></script>
+	<script src="https://npmcdn.com/react-dom@0.14.2/dist/react-dom.js"></script>
+	<script src="https://npmcdn.com/babel-core@5.8.35/browser.js"></script>
+	-->
+	<script src="react.js"></script>
+	<script src="react-dom.js"></script>
+	<script src="browser.js"></script>
+</head>
+<body>
+	<div id="example"></div>
+	<script type="text/babel">
+
+		class Blog extends React.Component {
+			render() {
+				return (
+					<div>
+						{
+							this.props.posts.map(post => <Post post={ post } />)
+						}
+					</div>
+				)
+			}
+		}
+
+		class Post extends React.Component {
+			render() {
+				const title = this.props.post.title;
+				const likes = this.props.post.likedBy && this.props.post.likedBy.length || 0;
+
+				return (
+					<div>
+						<h4>{ title }</h4>
+						<LikeButton likes={ likes } />
+					</div>
+				)
+			}
+		}
+
+		class LikeButton extends React.Component {
+			constructor(props) {
+				super(props);
+				this.state = {
+					likes: props.likes
+				}
+			}
+
+			like() {
+				console.log('like!', this);
+				this.setState({
+					likes: this.state.likes + 1
+				})
+			}
+
+			render() {
+				console.log('this', this)
+				return (
+					<div>
+						<button onClick={ this.like.bind(this) }>👍 Like</button>
+						{ ' ' + this.state.likes + ' likes!!!!!' }
+					</div>
+				)
+			}
+		}
+
+		const blogPosts = [
+			{ title: 'My first blog post', likedBy: [ 'Joe', 'Jane' ] },
+			{ title: 'Another blog post' }
+		];
+
+		const blog = <Blog posts={ blogPosts } />;
+
+		ReactDOM.render(blog, document.getElementById('example'));
+
+	</script>
+</body>
+</html>

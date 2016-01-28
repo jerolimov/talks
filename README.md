@@ -13,16 +13,11 @@ and other authors, if specified.
 
 ### Upcoming
 
-#### Einführung in react.js und react-native
-
-2016-01-27 @ WebWorker Cologne,
-[Event page](http://www.meetup.com/de/WebWorker-Cologne/events/227777445/)
-
-#### Einführung in react-native (für "mobile native" Entwickler)
+#### Einführung in react-native (für "native mobile" Entwickler)
 
 2016-02 @ [mobile.cologne](http://mobile.cologne/)
 
-#### Einführung in react-native
+#### Einführung in react-native (für web Entwickler)
 
 2016-05-04 @ [PottJS](http://pottjs.de/), Dortmund
 
@@ -30,15 +25,24 @@ and other authors, if specified.
 
 ### History
 
-#### Einführung in react-native (für JS Entwickler)
+#### Introduction into react.js and react-native
 
-2015-12-08 @ [Cologne JS](http://colognejs.de/),
-[slides as PDF](2015-12-08-react-native/react-native-introduction-colognejs.pdf)
-<!-- [meetup.com](http://www.meetup.com/de/Cologne-js/events/227015933/) -->
+2016-01-27 @ [WebWorker Cologne](http://www.meetup.com/de-DE/WebWorker-Cologne/) meetup,
+[Event page](http://www.meetup.com/de/WebWorker-Cologne/events/227777445/)
+
+[React.js slides as PDF](2016-01-27-reactjs-and-reactnative/introduction-reactjs.pdf) and
+[react-native slides as PDF](2016-01-27-reactjs-and-reactnative/introduction-react-native.pdf)
+
+#### How to develop a react-native app
+
+2015-12-08 @ [Cologne JS](http://colognejs.de/) meetup,
+[Event page](http://www.meetup.com/de/Cologne-js/events/227015933/)
+
+[Slides as PDF](2015-12-08-react-native/react-native-introduction-colognejs.pdf)
 
 #### CocoaPods Introduction
 
-2014-04-24 @ [CocoaHeads Aachen](http://hci.rwth-aachen.de/cocoaheads),
+2014-04-24 @ [CocoaHeads Aachen](http://hci.rwth-aachen.de/cocoaheads) meetup,
 [slides as PDF](2014-04-24-cocoapods/cocoapods-introduction-cocoaheads-aachen.pdf)
 
 #### Einführung Web Developer Tools (Chrome und Firefox)
@@ -53,7 +57,7 @@ and other authors, if specified.
 
 #### Einführung in die mobile, crossplattform Spieleentwicklung mit libGDX
 
-2013-05-25 @ LinuxTag, Berlin, Workshop w/ [Michael Kleinhenz](https://twitter.com/quendor)
+2013-05-25 @ LinuxTag conference, Berlin, Workshop w/ [Michael Kleinhenz](https://twitter.com/quendor)
 
 #### Grundlagen SEO
 
@@ -67,10 +71,10 @@ and other authors, if specified.
 
 #### Deine erste Android app in 45 Minuten
 
-2012-05-25 @ LinuxTag, Berlin
-<!-- [Program page](http://www.linuxtag.org/2012/de/program/program/vortragsdetails-talkid413.html) -->
+2012-05-25 @ LinuxTag conference, Berlin
+<!--[Program page](http://www.linuxtag.org/2012/de/program/program/vortragsdetails-talkid413.html) -->
 
 #### Android & Continuous integration
 
-2011-05-11 @ LinuxTag, Berlin
+2011-05-11 @ LinuxTag conference, Berlin
 <!-- [Program page](http://www.linuxtag.org/2011/de/program/program/vortragsliste-talkid165.html) -->

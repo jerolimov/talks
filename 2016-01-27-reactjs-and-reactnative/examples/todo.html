@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--
+	<script src="https://npmcdn.com/react@0.14.2/dist/react.js"></script>
+	<script src="https://npmcdn.com/react-dom@0.14.2/dist/react-dom.js"></script>
+	<script src="https://npmcdn.com/babel-core@5.8.35/browser.js"></script>
+	-->
+	<script src="react.js"></script>
+	<script src="react-dom.js"></script>
+	<script src="browser.js"></script>
+</head>
+<body>
+	<div id="example"></div>
+	<script type="text/babel">
+
+		class TodoList extends React.Component {
+			constructor() {
+				super();
+				this.state = {
+					items: []
+				};
+			}
+
+            addItem(text) {
+                const input = this.refs['newItemInput'];
+                const value = input.value;
+
+                this.setState({
+                    items: [...this.state.items, value]
+                });
+            }
+
+			render() {
+				return (
+					<div>
+						<h1>Todolist</h1>
+
+                        <input ref='newItemInput' />
+                        <button onClick={ this.addItem.bind(this) }>Add</button>
+
+                        <ul>
+						{
+                            this.state.items.map((item, index) => {
+                                return <li key={ index }>{item}</li>
+                            })
+                        }
+                        </ul>
+					</div>
+				);
+			}
+		}
+
+		ReactDOM.render(<TodoList />, document.getElementById('example'));
+
+	</script>
+</body>
+</html>
