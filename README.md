@@ -30,8 +30,8 @@ and other authors, if specified.
 2016-01-27 @ [WebWorker Cologne](http://www.meetup.com/de-DE/WebWorker-Cologne/) meetup,
 [Event page](http://www.meetup.com/de/WebWorker-Cologne/events/227777445/)
 
-[React.js slides as PDF](2016-01-27-reactjs-and-reactnative/introduction-reactjs.pdf) and
-[react-native slides as PDF](2016-01-27-reactjs-and-reactnative/introduction-react-native.pdf)
+[React.js slides as PDF](http://jerolimov.github.io/talks/2016-01-27-reactjs-and-reactnative/reactjs-introduction.pdf) and
+[react-native slides as PDF](http://jerolimov.github.io/talks/2016-01-27-reactjs-and-reactnative/react-native-introduction.pdf)
 
 #### How to develop a react-native app
 
