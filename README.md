@@ -1,4 +1,3 @@
-
 ## Talks
 
 Slides and other material by Christoph Jerolimov, [@jerolimov](https://twitter.com/jerolimov)
