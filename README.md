@@ -13,13 +13,17 @@ and other authors, if specified.
 
 ### Upcoming
 
-#### Einführung in react-native (für "native mobile" Entwickler)
+#### Einführung in react-native (für native mobile Entwickler)
 
 2016-02 @ [mobile.cologne](http://mobile.cologne/)
 
 #### Einführung in react-native (für web Entwickler)
 
-2016-05-04 @ [PottJS](http://pottjs.de/), Dortmund
+2016-03-01 @ [inovex Meetup](http://www.meetup.com/inovex-cologne/), Köln
+
+2016-03-24 @ [Webworker Ruhr](http://www.meetup.com/wwruhr/) meetup, Essen
+
+2016-05-04 @ [PottJS](http://pottjs.de/) meetup, Dortmund
 
 <br/><br/>
 
@@ -27,7 +31,7 @@ and other authors, if specified.
 
 #### Introduction into react.js and react-native
 
-2016-01-27 @ [WebWorker Cologne](http://www.meetup.com/de-DE/WebWorker-Cologne/) meetup,
+2016-01-27 @ [WebWorker Cologne](http://www.meetup.com/WebWorker-Cologne/),
 [Event page](http://www.meetup.com/de/WebWorker-Cologne/events/227777445/)
 
 [React.js slides as PDF](http://jerolimov.github.io/talks/2016-01-27-reactjs-and-reactnative/reactjs-introduction.pdf) and
@@ -55,7 +59,7 @@ and other authors, if specified.
 2013-10-10 @ TH-Köln w/ [Dominik Schilling](https://twitter.com/ocean90),
 [online slides](http://jerolimov.github.io/talks/2013-10-10-git-and-github/)
 
-#### Einführung in die mobile, crossplattform Spieleentwicklung mit libGDX
+#### Mobile crossplattform Spieleentwicklung mit libGDX
 
 2013-05-25 @ LinuxTag conference, Berlin, Workshop w/ [Michael Kleinhenz](https://twitter.com/quendor)
 
