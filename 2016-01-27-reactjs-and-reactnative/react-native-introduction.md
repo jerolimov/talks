@@ -2,7 +2,7 @@
 
 # [fit] Introduction **react-native**
 
-# [fit] Webworkers Cologne, 27th january 2016, Christoph Jerolimov
+# [fit] Webworkers Cologne, 27th January 2016, Christoph Jerolimov
 
 ---
 
@@ -70,7 +70,7 @@ Facebook Ads Team developed the Android version within three months and with 85 
 
 ## **Status & Roadmap**
 
-* 0.x - But production ready if your brave. 
+* 0.x - But production ready if your brave.
 * Some components are not yet available on Android (MapView for example, but community projects are available for most problems)
 * Android M permissions
 * Performance and API improvements
@@ -165,7 +165,7 @@ ActionSheetIOS, **Alert,** AlertIOS, **Animated,** AppRegistry, AppState, AppSta
 ## **Hello world**
 
 ```javascript
-class HelloWorld {
+class HelloWorld extends Component {
 	render() {
 		return <Text>Hello World</Text>;
 	}
@@ -240,7 +240,7 @@ if (Platform.OS === 'android') {
 } else {
     // ...
 }
-  
+
 ```
 
 ---
