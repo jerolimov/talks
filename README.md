@@ -64,9 +64,12 @@ and other authors, if specified.
 
 [Online slides](http://jerolimov.github.io/talks/2013-10-10-git-and-github/)
 
-#### Mobile crossplattform Spieleentwicklung mit libGDX
+#### Crossplattform mobile game development with libGDX
 
 2013-05-25 @ LinuxTag conference, Berlin, Workshop w/ [Michael Kleinhenz](https://twitter.com/quendor)
+
+[Online slides part 1](http://jerolimov.github.io/talks/2013-05-25-mobile-games-with-libgdx/)
+and [part 2](http://jerolimov.github.io/talks/2013-05-25-mobile-games-with-libgdx/code.html)
 
 #### Grundlagen SEO
 
