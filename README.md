@@ -15,8 +15,6 @@ and other authors, if specified.
 
 #### Einführung in react-native (für web Entwickler)
 
-2016-03-01 @ [inovex Meetup](http://www.meetup.com/inovex-cologne/), Köln
-
 2016-03-24 @ [Webworker Ruhr](http://www.meetup.com/wwruhr/) meetup, Essen
 
 2016-05-04 @ [PottJS](http://pottjs.de/) meetup, Dortmund
@@ -24,6 +22,13 @@ and other authors, if specified.
 <br/><br/>
 
 ### History
+
+#### Introduction into react-native
+
+2016-03-01 @ [inovex meetup](http://www.meetup.com/inovex-cologne/), Köln
+
+[Slides as PDF](http://jerolimov.github.io/talks/2016-03-01-react-native/react-native-introduction.pdf) -
+[Eventpage](http://www.meetup.com/de-DE/inovex-cologne/events/228696498/)
 
 #### Status quo react-native for native mobile devs
 
