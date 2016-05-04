@@ -13,11 +13,9 @@ and other authors, if specified.
 
 ### Upcoming
 
-#### Einführung in react-native (für web Entwickler)
+#### Introduction into react-native
 
-2016-03-24 @ [Webworker Ruhr](http://www.meetup.com/wwruhr/) meetup, Essen
-
-2016-05-04 @ [PottJS](http://pottjs.de/) meetup, Dortmund
+2016-06-22 @ [Webworker Ruhr](http://www.meetup.com/wwruhr/) meetup, Essen
 
 <br/><br/>
 
