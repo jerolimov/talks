@@ -25,6 +25,13 @@ and other authors, if specified.
 
 #### Introduction into react-native
 
+2016-05-04 @ [PottJS](http://pottjs.de/) meetup, Dortmund
+
+[Slides as PDF](http://jerolimov.github.io/talks/2016-05-04-react-native/react-native-introduction.pdf) -
+[Eventpage](http://www.meetup.com/de-DE/PottJS/events/230167682/)
+
+#### Introduction into react-native
+
 2016-03-01 @ [inovex meetup](http://www.meetup.com/inovex-cologne/), Köln
 
 [Slides as PDF](http://jerolimov.github.io/talks/2016-03-01-react-native/react-native-introduction.pdf) -
