@@ -13,9 +13,7 @@ and other authors, if specified.
 
 ### Upcoming
 
-#### Introduction into react-native
-
-2016-06-22 @ [Webworker Ruhr](http://www.meetup.com/wwruhr/) meetup, Essen
+n/a
 
 <br/><br/>
 
@@ -23,24 +21,31 @@ and other authors, if specified.
 
 #### Introduction into react-native
 
+2016-06-23 @ [Webworker Ruhr](http://www.meetup.com/wwruhr/) meetup, Essen
+
+[Slides as PDF](http://jerolimov.github.io/talks/2016-06-23-react-native/react-native-introduction.pdf) -
+[Eventpage](http://www.meetup.com/wwruhr/events/231770513/)
+
+#### Introduction into react-native
+
 2016-05-04 @ [PottJS](http://pottjs.de/) meetup, Dortmund
 
 [Slides as PDF](http://jerolimov.github.io/talks/2016-05-04-react-native/react-native-introduction.pdf) -
-[Eventpage](http://www.meetup.com/de-DE/PottJS/events/230167682/)
+[Eventpage](http://www.meetup.com/PottJS/events/230167682/)
 
 #### Introduction into react-native
 
 2016-03-01 @ [inovex meetup](http://www.meetup.com/inovex-cologne/), Köln
 
 [Slides as PDF](http://jerolimov.github.io/talks/2016-03-01-react-native/react-native-introduction.pdf) -
-[Eventpage](http://www.meetup.com/de-DE/inovex-cologne/events/228696498/)
+[Eventpage](http://www.meetup.com/inovex-cologne/events/228696498/)
 
 #### Status quo react-native for native mobile devs
 
 2016-02-18 @ [mobile.cologne](http://mobile.cologne/) meetup, Köln
 
 [Slides as PDF](http://jerolimov.github.io/talks/2016-02-18-react-native-status-quo/react-native-status-quo.pdf) -
-[Eventpage](http://www.meetup.com/de-DE/mobilecgn/events/228802361/)
+[Eventpage](http://www.meetup.com/mobilecgn/events/228802361/)
 
 #### Introduction into react.js and react-native
 
@@ -48,7 +53,7 @@ and other authors, if specified.
 
 [React.js slides as PDF](http://jerolimov.github.io/talks/2016-01-27-reactjs-and-reactnative/reactjs-introduction.pdf) and
 [react-native slides as PDF](http://jerolimov.github.io/talks/2016-01-27-reactjs-and-reactnative/react-native-introduction.pdf) -
-[Event page](http://www.meetup.com/de/WebWorker-Cologne/events/227777445/)
+[Event page](http://www.meetup.com/WebWorker-Cologne/events/227777445/)
 
 #### How to develop a react-native app
 
