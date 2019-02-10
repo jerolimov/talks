@@ -156,7 +156,7 @@ class Blink extends React.Component {
 
 ---
 
-## **Virtual DOM**
+## **Virtual DOM / view hierarchy**
 
 DOM manipulations are slow.
 

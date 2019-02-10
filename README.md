@@ -7,7 +7,7 @@ and other authors, if specified.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
 
-**Linked content (simular content on other websites, other repositories, ...) is not affected by this licence. Even if this content is derived from the same author.**
+**Linked content (similar content on other websites, other repositories, ...) is not affected by this licence. Even if this content is derived from the same author.**
 
 <br/><br/>
 
@@ -18,6 +18,37 @@ n/a
 <br/><br/>
 
 ### History
+
+#### Introduction into react-native
+
+2019-02-04 @ [Web Engineering Düsseldorf](https://www.meetup.com/Web-Engineering-Duesseldorf/), meetup, Düsseldorf
+
+[Slides as PDF](http://jerolimov.github.io/talks/2019-02-04-react-native/react-native-introduction.pdf) -
+[Eventpage](https://www.meetup.com/Web-Engineering-Duesseldorf/events/257457038/)
+
+#### Flutter vs react-native
+
+2018-11-23 @ [mobile.cologne](http://mobile.cologne/) meetup, Köln
+w/ [Christian Stahl](https://twitter.com/thinkmobilede)
+
+<!--[Slides as PDF](http://jerolimov.github.io/talks/2016-02-18-react-native-status-quo/react-native-status-quo.pdf) --->
+[Eventpage](https://www.meetup.com/mobilecgn/events/256368630/)
+
+#### Teufelszeug react-native
+
+2017-03-21 @ [Düsseldorf iOS Meetup](https://www.meetup.com/Dusseldorf-iOS-Meetup/)
+&amp; [CocoaHeads Düsseldorf](https://www.meetup.com/CocoaHeads-Cologne/) meetup, Düsseldorf
+
+[Slides as PDF](http://jerolimov.github.io/talks/2017-03-21-react-native/react-native-introduction.pdf) -
+[Eventpage](https://www.meetup.com/Dusseldorf-iOS-Meetup/events/237844906/)
+[Eventpage](https://www.meetup.com/CocoaHeads-Dusseldorf/events/237859604/)
+
+#### Teufelszeug react-native
+
+2016-08-15 @ [CocoaHeads Cologne](https://www.meetup.com/CocoaHeads-Cologne/events/233232952/) meetup, Köln
+
+[Slides as PDF](http://jerolimov.github.io/talks/2016-06-23-react-native/react-native-introduction.pdf) -
+[Eventpage](https://www.meetup.com/CocoaHeads-Cologne/events/233232952/)
 
 #### Introduction into react-native
 
