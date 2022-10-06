@@ -52,7 +52,7 @@ is not affected by this licence.
 
 2019-06-04 @ React & React Native Meetup Bonn
 
-[Slides as PDF](http://jerolimov.github.io/talks/2019-06-04-react-native-mini-introduction/react-native-mini-introduction) -
+[Slides as PDF](http://jerolimov.github.io/talks/2019-06-04-react-native-mini-introduction/react-native-mini-introduction.pdf) -
 [meetup.com](https://www.meetup.com/react-js-react-native-bonn-meetup/events/260563748/)
 
 ### Introduction into react-native
